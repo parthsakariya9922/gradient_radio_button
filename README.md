@@ -17,7 +17,7 @@ Add this to your `pubspec.yaml`:
 
 ``` yaml
 dependencies:
-gradient_radio_button: ^0.1.0
+gradient_radio_button: ^1.1.0
 ```
 
 ## Usage
@@ -27,9 +27,11 @@ import 'package:gradient_radio_button/gradient_radio_button.dart';
 
 GradientRadioButton(
   isActive: true,
-  size: 32,
-  borderColor: Colors.blue,
-  fillColor: Colors.white,
+  size: 25,
+  borderColor: Colors.black,
+  activeColor: Colors.white,
+  activeGradient: const LinearGradient(colors: [AppColors.black, AppColors.white]),
+  borderGradient: const LinearGradient(colors: [Colors.black, Colors.white]),
 )
 ````
 
